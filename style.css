@@ -1,11 +1,13 @@
-/* Note that the below CSS expects these variables */
+/* Note that the below CSS expects these variables. You should add the below block into your CSS. 
+If you already have a :root block because you are using the theme switcher, 
+then the below needs to be added to each css file per theme */
 
-:root {
---bs-post-category-wrapper: #16181b;
+    :root {
+    --bs-post-category-wrapper: #16181b;
     --bs-post-category-wrapper-radius: 0.375rem;
     --bs-post-category-wrapper-padding: 20px;
     --bs-post-category-wrapper-margin: 20px;
-}
+    }
 
 /* Add this CSS to the threaded classes you already have if you are using the post threading */
 
