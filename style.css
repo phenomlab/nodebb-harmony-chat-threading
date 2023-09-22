@@ -2,6 +2,14 @@
 
 /* Threaded Chat CSS */
 
+    @media (min-width: 576px) {
+    [component=post], [component="category/topic"], [component="categories/category"], li[component="chat/message"], [component="chat/recent/room"], div#users-container a {
+    background: var(--bs-post-category-wrapper);
+    border-radius: var(--bs-post-category-wrapper-radius);
+    margin-bottom: var(--bs-post-category-wrapper-margin);
+    border: 1px solid var(--bs-border-color);
+    }
+    }
     [data-self="1"].threaded {
         width: 50%;
         float: right;
