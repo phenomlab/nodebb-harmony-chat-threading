@@ -1,0 +1,56 @@
+*/ Add this CSS to the threaded classes you already have if you are using the post threading */
+
+/* Threaded Chat CSS */
+
+    [data-self="1"].threaded {
+        width: 50%;
+        float: right;
+        margin-right: 5% !important;
+        transition: margin-left 0.3s ease, margin-right 0.3s ease;
+        position: relative;
+        padding-bottom: 20px !important;
+    }
+    [data-self="1"].threaded::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 20px;
+        width: 0;
+        z-index: 1;
+        right: -30px;
+        border-width: 15px 15px 15px 0;
+        border: 15px solid var(--bs-body-navbar);
+        border-color: transparent transparent transparent var(--bs-body-navbar) !important;
+    }
+    [data-self="0"].threaded {
+        width: 50%;
+        float: left;
+        margin-left: 5% !important;
+        transition: margin-left 0.3s ease, margin-right 0.3s ease;
+        position: relative;
+        padding-bottom: 20px !important;
+    }
+    [data-self="0"].threaded::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 20px;
+        width: 0;
+        z-index: 1;
+        left: -30px;
+        border-width: 15px 15px 15px 0;
+        border: 15px solid var(--bs-body-navbar);
+        border-color: transparent var(--bs-body-navbar) transparent transparent !important;
+    }
+    [component="chat/message"] {
+        transition: margin-left 0.3s ease, margin-right 0.3s ease;  
+    }
+    [data-self="1"][component="chat/message"] .message-body-wrapper.threaded {
+        float: right;
+    }
+    [data-self="1"][component="chat/message"] .message-header.threaded{
+        float: right;
+    }
+    [component="chat/message/controls"] {
+        top: 30px;
+    }
