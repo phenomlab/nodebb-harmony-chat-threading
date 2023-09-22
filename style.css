@@ -1,6 +1,11 @@
 /* Note that the below CSS expects these variables. You should add the below block into your CSS. 
 If you already have a :root block because you are using the theme switcher, 
-then the below needs to be added to each css file per theme */
+then the below needs to be added to each css file per theme
+
+In some cases, classes using VARS may not be present on your system, and you'll need (for example) to substitute
+border-color: transparent transparent transparent var(--bs-body-navbar) !important; withh border-color: transparent transparent transparent #cccccc !important;
+etc etc...
+*/
 
     :root {
     --bs-post-category-wrapper: #16181b;
