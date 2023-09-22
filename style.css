@@ -25,6 +25,11 @@ etc etc...
     margin-bottom: var(--bs-post-category-wrapper-margin);
     border: 1px solid var(--bs-border-color);
     }
+    ul.topics-list li, li[component="chat/message"], [component="chat/recent/room"], div#users-container a {
+    padding: 0.75rem 0 !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    }
     }
     [data-self="1"].threaded {
         width: 50%;
