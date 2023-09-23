@@ -1,5 +1,5 @@
   /* Threaded Chat CSS */
-
+@media (min-width:1200px) {
 [data-self="1"].threaded {
     width: 50%;
     float: right;
@@ -60,3 +60,4 @@
     [component="chat/message/controls"] {
         top: 30px;
     }
+}
