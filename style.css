@@ -60,4 +60,7 @@
     [component="chat/message/controls"] {
         top: 30px;
     }
+    [component="chat/system-message"] {
+    clear: both;
+    }
 }
